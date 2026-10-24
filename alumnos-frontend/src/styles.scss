@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+.topbar { background: linear-gradient(135deg, #4f46e5, #7c3aed); color: white; padding: 32px 24px 56px; }
+.topbar-inner { max-width: 1000px; margin: 0 auto; }
+.topbar h1 { margin: 0; font-size: 28px; font-weight: 700; }
+.topbar p { margin: 6px 0 0; opacity: 0.85; }
+.contenedor { max-width: 1000px; margin: -32px auto 40px; padding: 0 24px; }

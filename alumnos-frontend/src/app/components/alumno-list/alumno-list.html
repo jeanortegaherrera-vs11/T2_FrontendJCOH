@@ -1,0 +1,39 @@
+<div class="tarjeta">
+  <div class="tarjeta-header">
+    <h2>Lista de alumnos</h2>
+    <span class="total">{{ alumnos().length }} registrados</span>
+  </div>
+
+  @if (error()) {
+    <p class="error">{{ error() }}</p>
+  }
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombres</th>
+        <th>Carrera</th>
+        <th>Ciclo</th>
+        <th>Promedio</th>
+        <th>Estado académico</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (a of alumnos(); track a.id) {
+        <tr>
+          <td>{{ a.id }}</td>
+          <td class="nombre">{{ a.nombres }}</td>
+          <td>{{ a.carrera }}</td>
+          <td>{{ a.ciclo }}</td>
+          <td>{{ a.promedio }}</td>
+          <td>
+            <span class="badge" [class.regular]="a.estadoAcademico === 'REGULAR'" [class.riesgo]="a.estadoAcademico !== 'REGULAR'">{{ a.estadoAcademico }}</span>
+          </td>
+          <td><button (click)="eliminar(a.id)">Eliminar</button></td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

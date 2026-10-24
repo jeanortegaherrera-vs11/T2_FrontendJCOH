@@ -1,0 +1,15 @@
+.tarjeta { background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); overflow: hidden; }
+.tarjeta-header { display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; border-bottom: 1px solid #e2e8f0; }
+.tarjeta-header h2 { margin: 0; font-size: 20px; }
+.total { background: #eef2ff; color: #4f46e5; padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; }
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; padding: 14px 24px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; background: #f8fafc; }
+td { padding: 14px 24px; border-top: 1px solid #f1f5f9; }
+tr:hover td { background: #f8fafc; }
+.nombre { font-weight: 600; }
+.badge { padding: 4px 12px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+.regular { background: #dcfce7; color: #166534; }
+.riesgo { background: #fee2e2; color: #991b1b; }
+button { background: #ef4444; color: white; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+button:hover { background: #dc2626; }
+.error { margin: 16px 24px; padding: 12px 16px; background: #fee2e2; color: #991b1b; border-radius: 8px; font-weight: 600; }
